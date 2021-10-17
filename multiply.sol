@@ -20,6 +20,7 @@ contract Multiply {
 	}
 
 	function multiplication(uint value) public checkOwnerAndAccept {
+        require(value >= 1 && value <= 10, 23);
 		result *= value;
 	}
 }
